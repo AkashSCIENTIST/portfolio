@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.contactss{
+    width: 100%;
+}
+
+.contacts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 8%;
+}
+
+.contact{
+    text-decoration: none;
+    font-size: xxx-large;
+    color: gray;
+    cursor: pointer;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.cc{
+    padding-top: 3%;
+    color: gray;
+    text-align: justify;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: x-small;
+}
+
+.contact:hover{
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    color: black;
+    transition-timing-function: ease-in-out;
+    text-shadow: 2px 2px 3px gray;
+}
