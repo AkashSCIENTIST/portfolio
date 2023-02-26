@@ -2,7 +2,6 @@
 
 .navbar {
     display: flex;
-    height: 110px;
     max-width: 100%;
     align-items: center;
     justify-content: center;
@@ -20,9 +19,11 @@
 }
 
 .navbar .links {
-    /* margin-left: auto; */
+    margin-left: auto;
     padding-right: 3%;
     border: none;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 .link {

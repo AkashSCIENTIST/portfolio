@@ -2,6 +2,7 @@
 
 .contactss{
     width: 100%;
+    /* background-color: #ffb9b9; */
 }
 
 .contacts{
@@ -38,5 +39,5 @@
     -webkit-transition-delay: 0.1s;
     color: black;
     transition-timing-function: ease-in-out;
-    text-shadow: 2px 2px 3px gray;
+    filter: drop-shadow(0 0 45px rgba(255, 0, 132, 0.801));
 }

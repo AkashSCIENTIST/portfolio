@@ -3,6 +3,7 @@ import "./App.css";
 import Contacts from "./Contacts";
 import PageLoading from "./PageLoading";
 import { useEffect, useState } from "react";
+import Skills from "./Skills";
 
 function App(){
   const [loaded, isLoaded] = useState();
@@ -18,6 +19,7 @@ function Page({isLoaded}){
   }, []);
   return <>
     <Navbar/>
+    <Skills/>
     <Contacts/>
   </>
 }
