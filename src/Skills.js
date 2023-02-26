@@ -28,7 +28,7 @@ function Skills() {
     <MultiColorText>Skills</MultiColorText>
     <div className="skills">
         <center>
-        {icons.map((e) => <img src={e} width="75" height="75"/>)}
+        {icons.map((e) => <img src={e} width="70" height="70"/>)}
         </center>
     </div>
     </>;
