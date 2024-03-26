@@ -1,0 +1,8 @@
+.coverimage{
+    border-radius: 10px;
+    margin-left: 25rel;
+    margin-top: 2rel;
+    box-shadow: inset 0 10px 10px rgba(0,0,0,0), 0 15px 15px #595858;
+    height: max-content;
+    width: max-content;
+}

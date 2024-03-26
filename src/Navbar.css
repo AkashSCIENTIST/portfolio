@@ -1,39 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 .navbar {
     display: flex;
+    flex-direction: row;
     max-width: 100%;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", Helvetica, sans-serif;
-    border-radius: 0 0 15px 15px;
     position: sticky;
     -webkit-position: sticky;
     z-index: 2;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* background-color: rgba(255, 255, 255, 0.5); */
-    background-color: rgba(0, 0, 0, 1);
-    flex-direction: row;
+    background-color: white;
     row-gap: 5%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    transition: all 0.5s ease;
 }
 
-.navbar .links {
-    margin-left: auto;
-    padding-right: 3%;
-    border: none;
-    padding-bottom: 1%;
-    padding-top: 1%;
+
+.name{
+    margin-right: auto;
+    font-size: 2rem;
+    padding-left: 5rem;
+    background: linear-gradient(90deg, #3F00A5 0%, #813EEF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: light;
+}
+
+@media (max-width:550px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+    .name{
+        justify-self: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .link{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .link {
+    display: inline-block;
     text-decoration: none;
-    color: white;
-    /* color: black; */
+    color: #813EEF;
     cursor: pointer;
-    padding: 6px;
-    font-size: medium;
-    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.link:hover{
+    animation: mybackground 0.25s ease-in-out forwards;
+    border-radius: 5px;
+}
+
+.link:hover ::after{
+    background-color: #813EEF;
+    color: #FAFAFA;
+}
+
+@keyframes mybackground {
+    10% {
+        background-color: #FAFAFA;
+        color: #3F00A5;
+    }
+
+    100% {
+        background-color: #813EEF;
+        color: #FAFAFA;
+    }
 }
 
 .logo-img{

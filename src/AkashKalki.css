@@ -1,0 +1,23 @@
+.kalkitext{
+    list-style: 1em;
+    font-size: 30vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust:100%;
+    height: max-content;
+    background: linear-gradient(90deg, #3F00A5 0%, #813EEF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.kalkimain{
+    width: max-content;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10%;
+}
