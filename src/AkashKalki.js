@@ -33,6 +33,13 @@ function AkashKalki() {
 
 		arr.push("A•KA•SH");
 		arr.push("•AKASH•");
+		arr.push("AKASH");
+		arr.push("aKASH");
+		arr.push("AkASH");
+		arr.push("AKaSH");
+		arr.push("AKAsH");
+		arr.push("AKASh");
+		arr.push("AKASH");
 		arr.push("(AKASH)");
 		arr.push("(:AKASH:)");
 		arr.push("(: AKASH :)");
@@ -42,7 +49,7 @@ function AkashKalki() {
 		arr.push(" (:  AKASH  :) ");
 		arr.push("(:   AKASH   :)");
 		arr.push(":   AKASH   :");
-		arr.push("   🚀AKASH🛰️   ");
+        arr.push("    AKASH    ");
 
 		for (let i of arr) {
 			console.log(i);
