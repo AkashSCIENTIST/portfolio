@@ -12,13 +12,13 @@ function Navbar() {
 			<div className='links'>
 				<i>
 					<a href='' className='link'>
-						🏠 Home
+						<b>🏠 Home</b>
 					</a>
 					<a href='' className='link'>
-						🤹 Skills
+						<b>🤹 Skills</b>
 					</a>
 					<a href='#contacts' className='link'>
-						📞 Contacts
+						<b>📞 Contacts</b>
 					</a>
 				</i>
 			</div>

@@ -14,10 +14,43 @@
 
 }
 
+.kalkitext:hover{
+    cursor: pointer;
+        filter: drop-shadow(0 0 10px rgba(156, 149, 231, 0.623));
+        animation: grayToColorKalki 1.9s ease-in linear;
+}
+
 .kalkimain{
     width: max-content;
     justify-self: center;
     margin-left: auto;
     margin-right: auto;
     height: 10%;
+}
+
+@keyframes grayToColorKalki {
+    0% {
+        filter: rgb(128, 128, 128);
+        -webkit-filter: grayscale(100%);
+    }
+
+    25% {
+        filter: rgb(64, 64, 64);
+        -webkit-filter: grayscale(75%);
+    }
+
+    50% {
+        filter: rgb(32, 32, 32);
+        -webkit-filter: grayscale(50%);
+    }
+
+    75% {
+        filter: rgb(16, 16, 16);
+        -webkit-filter: grayscale(25%);
+    }
+
+    100% {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+    }
 }

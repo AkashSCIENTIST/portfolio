@@ -16,7 +16,7 @@
     padding: 2%;
     /* transition-delay: 0.5s; */
     /* filter: gray; */
-    /* -webkit-filter: grayscale(100%); */
+    -webkit-filter: grayscale(100%);
     animation: ColorToGray 1.9s ease-in linear;
 }
 
