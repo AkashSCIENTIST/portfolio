@@ -1,12 +1,8 @@
 .kalkitext{
-    list-style: 1em;
     font-size: 17vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 10px;
-    text-size-adjust: 100%;
-    -webkit-text-size-adjust:100%;
     height: max-content;
     background: linear-gradient(90deg, #3F00A5 0%, #813EEF 100%);
     -webkit-background-clip: text;
@@ -16,16 +12,17 @@
 
 .kalkitext:hover{
     cursor: pointer;
-        filter: drop-shadow(0 0 10px rgba(156, 149, 231, 0.623));
+        filter: drop-shadow(0 0 4px rgba(21, 0, 255, 0.623));
         animation: grayToColorKalki 1.9s ease-in linear;
 }
 
 .kalkimain{
     width: max-content;
-    justify-self: center;
     margin-left: auto;
     margin-right: auto;
-    height: 10%;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes grayToColorKalki {
