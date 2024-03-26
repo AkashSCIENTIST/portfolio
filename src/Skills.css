@@ -16,7 +16,7 @@
     padding: 2%;
     /* transition-delay: 0.5s; */
     /* filter: gray; */
-    -webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(50%);
     animation: ColorToGray 1.9s ease-in linear;
 }
 
@@ -29,19 +29,19 @@
 @keyframes grayToColor {
     0%{
         filter: rgb(128, 128, 128);
-        -webkit-filter: grayscale(100%);
+        -webkit-filter: grayscale(50%);
     }
     25%{
         filter: rgb(64,64,64);
-        -webkit-filter: grayscale(75%);
+        -webkit-filter: grayscale(40%);
     }
     50% {
         filter: rgb(32, 32, 32);
-        -webkit-filter: grayscale(50%);
+        -webkit-filter: grayscale(30%);
     }
     75% {
         filter: rgb(16, 16, 16);
-        -webkit-filter: grayscale(25%);
+        -webkit-filter: grayscale(20%);
     }
     100%{
         filter: none;
