@@ -41,7 +41,7 @@ function AkashKalki() {
 		arr.push(": (: AKASH :) :");
 		arr.push(" (:  AKASH  :) ");
 		arr.push("(:   AKASH   :)");
-		arr.push(":   🚀AKASH🛰️   :");
+		arr.push(":   AKASH   :");
 		arr.push("   🚀AKASH🛰️   ");
 
 		for (let i of arr) {
