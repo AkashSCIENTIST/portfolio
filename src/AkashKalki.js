@@ -34,22 +34,20 @@ function AkashKalki() {
 		arr.push("A•KA•SH");
 		arr.push("•AKASH•");
 		arr.push("AKASH");
-		arr.push("aKASH");
-		arr.push("AkASH");
-		arr.push("AKaSH");
-		arr.push("AKAsH");
-		arr.push("AKASh");
+		arr.push("akash");
+		arr.push("Akash");
+		arr.push("aKash");
+		arr.push("akAsh");
+		arr.push("akaSh");
+		arr.push("akasH");
 		arr.push("AKASH");
 		arr.push("(AKASH)");
 		arr.push("(:AKASH:)");
 		arr.push("(: AKASH :)");
-		arr.push("(: (AKASH) :)");
-		arr.push("(: (:AKASH:) :)");
-		arr.push(": (: AKASH :) :");
-		arr.push(" (:  AKASH  :) ");
-		arr.push("(:   AKASH   :)");
-		arr.push(":   AKASH   :");
-        arr.push("    AKASH    ");
+		arr.push("闩长闩丂廾");
+		arr.push("🅐🅚🅐🅢🅗");
+		arr.push("ⒶⓀⒶⓈⒽ");
+		arr.push("AKASH");
 
 		for (let i of arr) {
 			console.log(i);

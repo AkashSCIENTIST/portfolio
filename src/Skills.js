@@ -1,3 +1,4 @@
+import Card from "./Card";
 import "./Skills.css";
 
 function Skills() {
@@ -33,15 +34,16 @@ function Skills() {
 		"https://raw.githubusercontent.com/devicons/devicon/master/icons/canva/canva-original.svg",
 	];
 	return (
-		<>
+		<Card>
 			<div className='skills'>
 				<center>
 					{icons.map((e) => (
-						<img src={e} width='70' height='70' />
+						// <Image src={e} width='70' height='70' key={e} />
+						<img src={e} width='70' height='70' key={e} />
 					))}
 				</center>
 			</div>
-		</>
+		</Card>
 	);
 }
 

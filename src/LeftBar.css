@@ -1,0 +1,100 @@
+.left_card {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.profile-photo{
+    border-radius: 5px;
+    height: 5vw;
+    width: 5vw;
+}
+
+.dividor{
+    display: table;
+    clear: both;
+}
+
+.left-bar-left{
+    float: left;
+    width: 5vw;
+}
+
+.left-bar-right{
+    float: left;
+    padding-left: 2vw;
+    font-family: Sans-Serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+.profile-name{
+    background: linear-gradient(90deg, #000000 0%, #0c008d 100%);
+    font-size: 1.55vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dob-text{
+    font-size: 0.75vw;
+    color: gray;
+}
+
+@media (max-width : 975px) {
+    .dividor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-bar-left{
+        float: center;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .left-bar-right{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+    }
+    .profile-photo {
+        border-radius: 5px;
+        height: 9vw;
+        width: 9vw;
+    }
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.links > a{
+padding-top: 10px;
+width: 100%;
+}
+
+.link {
+    border: 2px solid rgba(12, 0, 141, 0.22);
+    background-color: transparent;
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.6dvw;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.link:hover{
+    border: 2px solid white;
+    background: linear-gradient(90deg, #000000 0%, #0c008d 100%);
+    color: white;
+}

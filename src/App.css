@@ -1,7 +1,13 @@
+
 *{
     margin: 0;
     padding: 0;
 }
+
+.app{
+    background-color: #f0edee;
+}
+
 
 .loader{
     height: 99vh;
@@ -11,4 +17,65 @@
     text-align: justify;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width:1130px) {
+    .main_left {
+        float: left;
+        width: 35%;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .main_middle{
+        float: left;
+        width: 65%;
+    }
+    .main_right{
+        display: none;
+    }
+    .page_divider {
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+@media (min-width:1130px) {
+    .main_left {
+        float: left;
+        width: 25%;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .inner_left{
+        display: none;
+    }
+
+    .main_middle {
+        float: left;
+        width: 50%;
+    }
+
+    .main_right {
+        float: left;
+        width: 25%;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .page_divider {
+        display: table;
+        clear: both;
+    }
 }

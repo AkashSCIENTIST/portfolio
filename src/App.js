@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import Skills from "./Skills";
 import Body from "./Body";
 import AkashKalki from "./AkashKalki";
+import LeftBar from "./LeftBar";
+import Card from "./Card";
 
 function App() {
 	const [loaded, isLoaded] = useState();
@@ -25,13 +27,27 @@ function Page({ isLoaded }) {
 		isLoaded(true);
 	}, []);
 	return (
-		<>
-			<Navbar />
-			<AkashKalki />
-			{/* <Body/> */}
-			<Skills />
-			<Contacts />
-		</>
+		<div className='app'>
+			{/* <Navbar /> */}
+			<div className='page_divider'>
+				<div className='main_left'>
+					<LeftBar />
+					<div className='inner_left'>
+						<LeftBar />
+					</div>
+				</div>
+				<div className='main_middle'>
+					<Card>
+						<AkashKalki />
+					</Card>
+					<Skills />
+					<Skills />
+				</div>
+				<div className='main_right'>
+					<LeftBar />
+				</div>
+			</div>
+		</div>
 	);
 }
 

@@ -6,23 +6,26 @@
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15%;
-    padding-right: 15%;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 2%;
+    /* padding-left: 3%;
+    padding-right: 3%; */
 }
   
 .skills img {
     display: inline-block;
     font-size:initial;
     padding: 2%;
-    /* transition-delay: 0.5s; */
-    /* filter: gray; */
-    -webkit-filter: grayscale(50%);
     animation: ColorToGray 1.9s ease-in linear;
+    filter: drop-shadow(0 0 0 #0c008d);
+    /* background-color: rgb(221, 221, 221); */
+    border-radius: 5px;
 }
 
 .skills img:hover {
     cursor: pointer;
-    filter: drop-shadow(0 0 30px rgba(255, 0, 132, 0.623));
+    filter: drop-shadow(0 0 5px #0c008d);
     animation: grayToColor 1.9s ease-in linear;
 }
 
