@@ -1,16 +1,12 @@
 .skills{
-    /* padding: 5%;
-    display:flex; */
-    /* background-image: url(./bg.png); ffffff ffdddd ffb9b9 */
-    /* background-size:  cover; */
+
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
     gap: 10px;
     justify-content: space-between;
     margin: 2%;
-    /* padding-left: 3%;
-    padding-right: 3%; */
+    
 }
   
 .skills img {

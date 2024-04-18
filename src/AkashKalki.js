@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./AkashKalki.css";
+import Card from "./Card";
 
 function AkashKalki() {
 	const [name, setName] = useState();
@@ -49,9 +50,9 @@ function AkashKalki() {
 		arr.push("ⒶⓀⒶⓈⒽ");
 		arr.push("AKASH");
 
-		for (let i of arr) {
-			console.log(i);
-		}
+		// for (let i of arr) {
+		// 	console.log(i);
+		// }
 
 		function loopWithDelay(index) {
 			setTimeout(() => {
@@ -66,9 +67,11 @@ function AkashKalki() {
 	}, []);
 
 	return (
-		<div className='kalkimain'>
-			<h1 className='kalkitext'>{name}</h1>
-		</div>
+		<Card className='kalkimain'>
+			<center>
+				<h1 className='kalkitext'>{name}</h1>
+			</center>
+		</Card>
 	);
 }
 

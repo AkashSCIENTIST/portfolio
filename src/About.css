@@ -1,0 +1,12 @@
+.about{
+    margin-left: 5%;
+    margin-right: auto;
+    font-family: Sans-Serif;
+    padding-top: 2%;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.about > ul > li{
+    list-style-type: "⭐";
+}

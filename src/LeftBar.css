@@ -30,23 +30,83 @@
 }
 
 .profile-name{
-    background: linear-gradient(90deg, #000000 0%, #0c008d 100%);
-    font-size: 1.55vw;
+    background: linear-gradient(90deg, #F88379 0%, #0c008d 100%);
+    font-size: 1.55rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .dob-text{
-    font-size: 0.75vw;
     color: gray;
 }
 
-@media (max-width : 975px) {
+@media (max-width : 600px) {
+    .left_card {
+        position: static;
+        z-index: 1;
+        top: 0;
+    }
+    .profile-photo {
+        border-radius: 5px;
+        height: 8vw;
+        width: 8vw;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .dob-text {
+        font-size: 1rem;
+    }
+
+    .dividor {
+        display: flex;
+        flex-direction : row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .left-bar-left {
+        float: left;
+        width: 5vw;
+    }
+
+    .left-bar-right {
+        float: left;
+        padding-left: 2vw;
+        font-family: Sans-Serif;
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: center;
+    }
+
+    .profile-name {
+        background: linear-gradient(90deg, #000000 0%, #0c008d 100%);
+        font-size: 5vw;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .link {
+        font-size: 2.9vw;
+    }
+}
+
+@media (max-width : 1265px)  and (min-width : 600px) {
     .dividor{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .dob-text {
+        font-size: 1rem;
     }
     .left-bar-left{
         float: center;
@@ -65,36 +125,57 @@
         height: 9vw;
         width: 9vw;
     }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .link {
+        font-size: 1.15em;
+    }
+    .contact{
+        height: 2.5vw;
+        width: 2.5vw;
+    }
 }
 
-.links{
-    display: flex;
-    flex-direction: column;
+@media (min-width : 1265px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .link{
+        font-size: 1.6vw;
+    }
+    .dob-text {
+        font-size: 1rem;
+    }
 }
 
-.links > a{
-padding-top: 10px;
-width: 100%;
+
+
+.links > a {
+    padding-top: 10px;
+    width: 100%;
 }
 
 .link {
-    border: 2px solid rgba(12, 0, 141, 0.22);
+    border: 0.5px solid #F88379;
     background-color: transparent;
     border-radius: 5px;
     width: 100%;
     display: inline-block;
     text-decoration: none;
-    color: #000000;
+    color: #F88379;
     cursor: pointer;
     padding: 1rem;
-    font-size: 1.6dvw;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
+
 .link:hover{
-    border: 2px solid white;
-    background: linear-gradient(90deg, #000000 0%, #0c008d 100%);
-    color: white;
+    border: 0.5px solid #0c008d;
+    /* background: linear-gradient(75deg, #F88379 0%, #0c008d 60%, #0c008d 100%); */
+    color: #0c008d;
 }

@@ -1,5 +1,6 @@
 import Card from "./Card";
 import "./Skills.css";
+import UnderlineText from "./UnderlineText";
 
 function Skills() {
 	const icons = [
@@ -35,6 +36,7 @@ function Skills() {
 	];
 	return (
 		<Card>
+			<UnderlineText>Skills</UnderlineText>
 			<div className='skills'>
 				<center>
 					{icons.map((e) => (

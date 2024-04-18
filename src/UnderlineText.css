@@ -1,0 +1,16 @@
+.underline-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    display: inline;
+    /* --underline-width: 8;
+    --underline-offset-y: -2px;
+    -webkit-text-decoration: 3px red solid underline;
+    text-decoration: 3px red solid underline;
+    -webkit-text-underline-position: auto; */
+    text-underline-position: auto;
+    margin-left: 7%;
+    background: linear-gradient(45deg, #F88379 0%, #0c008d 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+}

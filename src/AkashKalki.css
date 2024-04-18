@@ -1,11 +1,11 @@
 .kalkitext{
     line-height: 1.5;
-    font-size: 9vh;
+    font-size: 8vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: auto;
     margin-bottom: auto;
-    height: max-content;
-    background: linear-gradient(90deg, #000000 0%, #0c008d 100%);
+    height: max-content; 
+    background: linear-gradient(90deg, #F88379 0%,#0c008d 90%,#FF00FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 

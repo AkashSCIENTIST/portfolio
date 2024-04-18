@@ -1,13 +1,10 @@
-import Navbar from "./Navbar";
 import "./App.css";
-import Contacts from "./Contacts";
 import PageLoading from "./PageLoading";
 import { useEffect, useState } from "react";
 import Skills from "./Skills";
-import Body from "./Body";
 import AkashKalki from "./AkashKalki";
 import LeftBar from "./LeftBar";
-import Card from "./Card";
+import About from "./About";
 
 function App() {
 	const [loaded, isLoaded] = useState();
@@ -37,9 +34,8 @@ function Page({ isLoaded }) {
 					</div>
 				</div>
 				<div className='main_middle'>
-					<Card>
-						<AkashKalki />
-					</Card>
+					<AkashKalki />
+					<About />
 					<Skills />
 					<Skills />
 				</div>
