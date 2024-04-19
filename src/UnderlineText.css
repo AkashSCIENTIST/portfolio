@@ -8,9 +8,16 @@
     text-decoration: 3px red solid underline;
     -webkit-text-underline-position: auto; */
     text-underline-position: auto;
-    margin-left: 7%;
-    background: linear-gradient(45deg, #F88379 0%, #0c008d 95%);
+    margin-left: 20px;
+    background: linear-gradient(45deg, #F88379, #0c008d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3rem;
+    font-size: 2.5rem;
+}
+
+.ruler{
+    background: linear-gradient(45deg, #F88379, #0c008d);
+    border: none;
+    height: 1px;
+    margin: 20px;
 }

@@ -8,6 +8,13 @@
     border-radius: 5px;
     height: 5vw;
     width: 5vw;
+    transition: transform 0.3s ease-in;
+    transform: scale(1);
+}
+
+.profile-photo:hover{
+    transition: transform 0.2s ease-in;
+    transform: scale(1.1);
 }
 
 .dividor{

@@ -13,7 +13,7 @@ function LeftBar() {
 							<img src={AkashImage} className='profile-photo' />
 						</div>
 						<div className='left-bar-right'>
-							<b className='profile-name'>Akash S P</b>
+							<b className='profile-name'>AKASH S P</b>
 							<p className='dob-text'>Born August 2, 2002</p>
 						</div>
 					</div>

@@ -37,7 +37,7 @@ function Skills() {
 	return (
 		<Card>
 			<UnderlineText>Skills</UnderlineText>
-			<div className='skills'>
+			<div className='skills' id='skills'>
 				<center>
 					{icons.map((e) => (
 						// <Image src={e} width='70' height='70' key={e} />

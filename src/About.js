@@ -7,7 +7,7 @@ function About() {
 		<>
 			<Card>
 				<UnderlineText>About</UnderlineText>
-				<div className='about'>
+				<div className='about' >
 					<ul>
 						<li>
 							Information Student at PSG College of Technology (2020-2024)

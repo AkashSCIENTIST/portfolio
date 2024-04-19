@@ -1,0 +1,56 @@
+.education-table{
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: Sans-Serif;
+    font-size: 1rem;
+}
+
+.school-name{
+    /* background: linear-gradient(90deg, #ff00d4, #1f01ff, #ff00d4); */
+    background: #21003c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding-: 10px;
+}
+
+.school-place{
+    padding-top: 5px;
+    float: right;
+    font-family: Georgia, serif;
+}
+
+.school-year{
+    float: right;
+    font-family: Georgia, sans-serif;
+}
+
+.school-degree{
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+}
+
+.school-score {
+    font-family: Georgia, serif;
+}
+
+@media (max-width:1290px) {
+    .school-number{
+        display: none;
+    }
+    .education-table{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .education-table > tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .education-table > td {
+        width: 100%;
+    }
+}

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: url('./cursor.png'), auto;
 }
 
 .app{
@@ -8,6 +9,7 @@
     background-size: 3em 3em;
     background-color: #ffffff;
     background-attachment: fixed;
+    
 }
 
 
@@ -106,3 +108,13 @@
         clear: both;
     }
 }
+
+/* .custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-image: url('cursor.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 9999;
+} */

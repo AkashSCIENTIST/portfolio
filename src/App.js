@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import AkashKalki from "./AkashKalki";
 import LeftBar from "./LeftBar";
 import About from "./About";
+import Education from "./Education";
 
 function App() {
 	const [loaded, isLoaded] = useState();
@@ -23,8 +24,13 @@ function Page({ isLoaded }) {
 	useEffect(() => {
 		isLoaded(true);
 	}, []);
+	const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+	const handleMouseMove = (e) => {
+		setCursorPosition({ x: e.clientX, y: e.clientY });
+	};
+
 	return (
-		<div className='app'>
+		<div className='app' onMouseMove={handleMouseMove}>
 			{/* <Navbar /> */}
 			<div className='page_divider'>
 				<div className='main_left'>
@@ -36,15 +42,25 @@ function Page({ isLoaded }) {
 				<div className='main_middle'>
 					<AkashKalki />
 					<About />
-					<Skills />
+					<Education />
 					<Skills />
 				</div>
 				<div className='main_right'>
 					<LeftBar />
 				</div>
 			</div>
+			{/* <CustomCursor cursorPosition={cursorPosition} /> */}
 		</div>
 	);
 }
+
+const CustomCursor = ({ cursorPosition }) => {
+	return (
+		<div
+			className='custom-cursor'
+			style={{ left: cursorPosition.x, top: cursorPosition.y }}
+		/>
+	);
+};
 
 export default App;

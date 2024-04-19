@@ -67,7 +67,7 @@ function AkashKalki() {
 	}, []);
 
 	return (
-		<Card className='kalkimain'>
+		<Card className='kalkimain' id='home'>
 			<center>
 				<h1 className='kalkitext'>{name}</h1>
 			</center>
