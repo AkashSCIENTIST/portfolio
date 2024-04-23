@@ -5,8 +5,13 @@
 }
 
 :root{
-    /* --background:#16181f; */
-    --background:#0b1215;
+    /* --background:#0b1215;
+    --textcolor: #fafafa; */
+
+    --background : #fefefe;
+    --textcolor:#0b1215;
+
+    --gradient: linear-gradient(112.1deg, rgb(77, 238, 253), rgb(3, 151, 232));
 }
 
 @font-face {

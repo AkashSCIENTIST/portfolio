@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+.theme-changer{
+    border-color: var(--textcolor);
+    border-width: 0.1px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--background);
+    color: var(--textcolor);
+    font-size: 1.2rem;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: light;
+    font-family: 'Sohne', system-ui,
+            -apple-system,
+            Helvetica Neue,
+            Arial,
+            sans-serif;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -25,7 +43,7 @@
     margin-right: auto;
     font-size: 1.5rem;
     margin-left: 20%;
-    color: #fafafa;
+    color: var(--textcolor);
     text-decoration: none;
     cursor: pointer;
     padding: 1rem;
@@ -37,6 +55,9 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: light;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar-links{
@@ -46,7 +67,7 @@
 .navbar-link {
     display: inline-block;
     text-decoration: none;
-    color: #fafafa;
+    color: var(--textcolor);
     cursor: pointer;
     padding: 1rem;
     font-size: 1.25rem;
@@ -60,7 +81,7 @@
 }
 
 
-@media (max-width:780px) {
+@media (max-width:910px) {
     .navbar{
         display: flex;
         flex-direction: column;
