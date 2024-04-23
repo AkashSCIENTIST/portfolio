@@ -4,11 +4,12 @@
     font-size: 1.2rem;
     font-family: Sans-Serif;
     font-size: 1rem;
+    color: #fafafa;
 }
 
 .school-name{
     /* background: linear-gradient(90deg, #ff00d4, #1f01ff, #ff00d4); */
-    background: #21003c;
+    background: #fcfcfc;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5rem;

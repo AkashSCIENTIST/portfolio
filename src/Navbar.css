@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-/* .navbar {
+.navbar {
     display: flex;
     flex-direction: row;
     max-width: 100%;
     align-items: center;
-    justify-content: center;
     position: sticky;
     -webkit-position: sticky;
     z-index: 2;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: white;
+    background-color: var(--background);
     row-gap: 5%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     transition: all 0.5s ease;
@@ -19,26 +18,49 @@
     position: sticky;
     top: 0;
     z-index: 2;
-} */
+} 
 
 
-/* .name{
+.name{
     margin-right: auto;
-    font-size: 3vw;
-    padding-left: 5rem;
-    background: linear-gradient(90deg, #3F00A5 0%, #813EEF 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    margin-left: 20%;
+    color: #fafafa;
     text-decoration: none;
     cursor: pointer;
     padding: 1rem;
-    font-family: "League Spartan", sans-serif;
+    font-family: 'Sohne', system-ui,
+            -apple-system,
+            Helvetica Neue,
+            Arial,
+            sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: light;
-} */
+}
 
-/* @media (max-width:550px) {
+.navbar-links{
+    margin-right: 25%;
+}
+
+.navbar-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fafafa;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Sohne', system-ui,
+        -apple-system,
+        Helvetica Neue,
+        Arial,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+@media (max-width:780px) {
     .navbar{
         display: flex;
         flex-direction: column;
@@ -53,43 +75,13 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .link{
+    .navbar-links{
         display: flex;
         flex-direction: row;
-    }
-} */
-
-.link {
-    display: inline-block;
-    text-decoration: none;
-    color: #0c008d;
-    cursor: pointer;
-    padding: 1rem;
-    font-size: 1.2vw;
-    font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-/* @keyframes mybackground {
-    10% {
-        background-color: #FAFAFA;
-        color: #3F00A5;
+        margin-right: 0;
+        
     }
 
-    100% {
-        background-color: #813EEF;
-        color: #FAFAFA;
-    }
 }
 
-.logo-img{
- object-fit: cover;
- padding: 0;
-}
 
-.logo{
-    padding: 0;
-    transform: scale(0.5);
-    border: none;
-} */

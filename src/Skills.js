@@ -1,4 +1,5 @@
 import Card from "./Card";
+import ContentTable from "./ContentTable";
 import "./Skills.css";
 import UnderlineText from "./UnderlineText";
 
@@ -36,7 +37,8 @@ function Skills() {
 	];
 	return (
 		<Card>
-			<UnderlineText>Skills</UnderlineText>
+			<UnderlineText> </UnderlineText>
+			<ContentTable title={"Skills"} body={``} />
 			<div className='skills' id='skills'>
 				<center>
 					{icons.map((e) => (

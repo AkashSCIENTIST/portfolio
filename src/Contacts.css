@@ -11,8 +11,6 @@
 
 
 .contact{
-    height: 2vw;
-    width: 2vw;
     padding: 2%;
     text-decoration: none;
     cursor: pointer;
@@ -31,7 +29,7 @@
 .contact:hover{
     transition-delay: 0.1s;
     -webkit-transition-delay: 0.1s;
-    color: black;
+    color: rgb(77, 238, 253);
     transition-timing-function: ease-in-out;
     filter: drop-shadow(0 0 45px rgba(255, 0, 132, 0.801));
 }

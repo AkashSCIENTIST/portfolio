@@ -1,6 +1,6 @@
 .underline-text{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    color: white;
     display: inline;
     /* --underline-width: 8;
     --underline-offset-y: -2px;
@@ -8,16 +8,13 @@
     text-decoration: 3px red solid underline;
     -webkit-text-underline-position: auto; */
     text-underline-position: auto;
-    margin-left: 20px;
-    background: linear-gradient(45deg, #F88379, #0c008d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 2.5rem;
 }
 
 .ruler{
-    background: linear-gradient(45deg, #F88379, #0c008d);
+    background: linear-gradient(112.1deg, rgb(77, 238, 253), rgb(3, 151, 232));
     border: none;
-    height: 1px;
-    margin: 20px;
+    height: 1.5px;
+    margin-bottom: 10px;
+    /* margin: 20px; */
 }

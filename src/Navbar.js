@@ -6,19 +6,19 @@ function Navbar() {
 		<div className='navbar'>
 			<div className='name'>
 				<a href='' className='name'>
-					🚀AKASH🛰️
+					AKASH
 				</a>
 			</div>
-			<div className='links'>
+			<div className='navbar-links'>
 				<i>
-					<a href='' className='link'>
-						<b>🏠 Home</b>
+					<a href='' className='navbar-link'>
+						<b>Home</b>
 					</a>
-					<a href='' className='link'>
-						<b>🤹 Skills</b>
+					<a href='' className='navbar-link'>
+						<b>Skills</b>
 					</a>
-					<a href='#contacts' className='link'>
-						<b>📞 Contacts</b>
+					<a href='#contacts' className='navbar-link'>
+						<b>Contacts</b>
 					</a>
 				</i>
 			</div>

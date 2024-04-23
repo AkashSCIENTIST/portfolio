@@ -6,6 +6,9 @@ import AkashKalki from "./AkashKalki";
 import LeftBar from "./LeftBar";
 import About from "./About";
 import Education from "./Education";
+import Navbar from "./Navbar";
+import FooterGradiant from "./FooterGradiant";
+import Contacts from "./Contacts";
 
 function App() {
 	const [loaded, isLoaded] = useState();
@@ -30,27 +33,35 @@ function Page({ isLoaded }) {
 	};
 
 	return (
-		<div className='app' onMouseMove={handleMouseMove}>
-			{/* <Navbar /> */}
-			<div className='page_divider'>
-				<div className='main_left'>
-					<LeftBar />
-					<div className='inner_left'>
+		<>
+			<div className='app' onMouseMove={handleMouseMove}>
+				<Navbar />
+				<AkashKalki />
+				<About />
+				<Education />
+				<Skills />
+				{/* <div className='page_divider'>
+					<div className='main_left'>
+						<LeftBar />
+						<div className='inner_left'>
+							<LeftBar />
+						</div>
+					</div>
+					<div className='main_middle'>
+						<AkashKalki />
+						<About />
+						<Education />
+						<Skills />
+					</div>
+					<div className='main_right'>
 						<LeftBar />
 					</div>
-				</div>
-				<div className='main_middle'>
-					<AkashKalki />
-					<About />
-					<Education />
-					<Skills />
-				</div>
-				<div className='main_right'>
-					<LeftBar />
-				</div>
+				</div> */}
+				{/* <CustomCursor cursorPosition={cursorPosition} /> */}
+				<Contacts/>
+				<FooterGradiant />
 			</div>
-			{/* <CustomCursor cursorPosition={cursorPosition} /> */}
-		</div>
+		</>
 	);
 }
 

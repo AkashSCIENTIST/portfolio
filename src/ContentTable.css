@@ -1,0 +1,99 @@
+.sub-table-ruler{
+    margin-top: 15px;
+    background: linear-gradient(112.1deg, rgb(77, 238, 253), rgb(3, 151, 232));
+    opacity: 0.5;
+    border: none;
+    height: 1px;
+}
+
+.content-table{
+    color: white;
+    width: 100%;
+}
+
+.content-table-title{
+    font-family: 'Signifier';
+    width: 50%;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.sub-table-title{
+    margin-top: 5px;
+    font-family: 'Sohne', system-ui,
+        -apple-system,
+        Helvetica Neue,
+        Arial,
+        sans-serif;
+    width: 50%;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.sub-table-body{
+    font-family: 'Sohne', system-ui,
+        -apple-system,
+        Helvetica Neue,
+        Arial,
+        sans-serif;
+    width: 50%;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.content-table-body{
+    font-family: 'Sohne', system-ui,
+        -apple-system,
+        Helvetica Neue,
+        Arial,
+        sans-serif;
+    width: 50%;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1000px) {
+    .content-table-title {
+        width: 40%;
+    }
+
+    .content-table-body {
+        width: 60%;
+    }
+    .sub-table-title {
+        width: 40%;
+    }
+
+    .sub-table-body {
+        width: 60%;
+    }
+}
+
+
+@media (max-width:850px) {
+    .content-table {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .content-table-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .content-table-title{
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+    .content-table-body{
+        width: 100%;
+    }
+    .sub-table-title {
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+
+    .sub-table-body {
+        width: 100%;
+    }
+}

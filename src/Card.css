@@ -1,14 +1,13 @@
 .card {
-    border-radius: 5px;
-    /* box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22); */
     padding: 30px;
-    margin: 20px;
+    margin: 40px;
+    margin-right: 5%;
+    margin-left: 5%;
     width: inherit;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    /* border-left: 3px solid #3F00A5; */
-    border: 1px solid rgba(12, 0, 141, 0.22);
     overflow: hidden;
     transition: 0.3s ease-out;
-    background-color:#fdfdfd;
+    background-color:var(--background);
+    /* border-top: 1px #fafafa solid ; */
 }

@@ -1,20 +1,29 @@
 .kalkitext{
     line-height: 1.5;
-    font-size: 8vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 50vh;
+    font-size: 25vh;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Sohne';
     margin-top: auto;
     margin-bottom: auto;
     height: max-content; 
-    background: linear-gradient(90deg, #F88379 0%,#0c008d 90%,#FF00FF 100%);
+    background: linear-gradient(120deg, rgb(77, 238, 253), rgb(3, 151, 232), rgb(77, 238, 253));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
+@media (max-width : 1025px) {
+    .kalkitext{
+        font-size: 17vw;
+
+    }
+}
+
 .kalkitext:hover{
     cursor: pointer;
-    /* filter: drop-shadow(0 0 4px rgba(21, 0, 255, 0.623)); */
-    /* animation: grayToColorKalki 1.9s ease-in linear; */
+    /* filter: drop-shadow(0 0 40px rgba(21, 0, 255, 0.623)); */
+    filter: drop-shadow(0 0 2px rgb(77, 238, 253));
 }
 
 .kalkimain{

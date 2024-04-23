@@ -1,0 +1,3 @@
+.footer-gradiant{
+    background: linear-gradient(var(--background), var(--background));
+}
