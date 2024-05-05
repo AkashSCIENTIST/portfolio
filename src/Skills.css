@@ -20,9 +20,7 @@
 }
 
 .skills img:hover {
-    cursor: pointer;
     filter: drop-shadow(0 0 5px #0c008d);
-    /* animation: grayToColor 1.9s ease-in linear; */
 }
 
 @keyframes grayToColor {

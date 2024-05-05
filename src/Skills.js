@@ -63,13 +63,13 @@ function Skills() {
 			<ContentTable
 				subtable={true}
 				title={"Databases"}
-				body={`SQL - MySQL, NoSQL - MongoDB`}
+				body={"SQL - MySQL, NoSQL - MongoDB"}
 			/>
 			<br />
 			<ContentTable
 				subtable={true}
 				title={"Generative AI"}
-				body={`Prompt Engineering wi respect to ChatGPT, Stable Diffusion and DALL-E`}
+				body={`Prompt Engineering with respect to ChatGPT, Stable Diffusion and DALL-E`}
 			/>
 		</Card>
 	);

@@ -8,7 +8,6 @@
     padding: 5px;
     background-color: var(--background);
     color: var(--textcolor);
-    font-size: 1.2rem;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: light;
@@ -27,8 +26,8 @@
     position: sticky;
     -webkit-position: sticky;
     z-index: 2;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(250px);
+    -webkit-backdrop-filter: blur(250px);
     opacity: 0.9;
     background-color: var(--background);
     row-gap: 5%;
@@ -72,7 +71,7 @@
     color: var(--textcolor);
     cursor: pointer;
     padding: 1rem;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
     font-family: 'Sohne', system-ui,
         -apple-system,
         Helvetica Neue,
@@ -88,7 +87,7 @@
         padding-bottom: 0.25rem;
     }
     .navbar-link{
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
     .theme-changer {
         font-size: 0.6rem;
