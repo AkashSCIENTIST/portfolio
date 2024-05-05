@@ -1,0 +1,65 @@
+.projects{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3rem;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.project-image{
+    height: 40vh;
+    width: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project{
+    width: 30vw;
+    flex-basis: 33.33%;
+    cursor: pointer;
+}
+
+@media (max-width:1450px) and (min-width:600px){
+    .project-image{
+        height: 25vh;
+        width: 100%;
+    }
+    .projects{
+        gap: 2rem;
+    }
+    .project {
+        width: 100%;
+    }
+}
+
+@media (max-width:740px) {
+    .project-image {
+        height: 25vh;
+    }
+    .projects {
+        flex-direction: column;
+        gap: 2rem;
+        
+    }
+    .project {
+        width: 100%;
+    }
+}
+
+.project-name{
+    padding-top: 1rem;
+    font-family: 'Sohne', system-ui,
+            -apple-system,
+            Helvetica Neue,
+            Arial,
+            sans-serif;
+    text-align: justify;
+    font-size: 1.5rem;
+    color: var(--textcolor);
+}

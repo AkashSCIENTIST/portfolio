@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    cursor: url('./cursor.png'), auto;
 }
 
 :root{
@@ -11,7 +10,7 @@
     --background : #fefefe;
     --textcolor:#0b1215;
 
-    --gradient: linear-gradient(112.1deg, rgb(77, 238, 253), rgb(3, 151, 232));
+    --gradient: linear-gradient(120deg, #e57eff, #0d539d);
 }
 
 @font-face {

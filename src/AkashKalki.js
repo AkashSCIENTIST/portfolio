@@ -44,7 +44,7 @@ function AkashKalki() {
 		arr.push("AKASH");
 		// arr.push("闩长闩丂廾");
 		arr.push("🅐🅚🅐🅢🅗");
-		arr.push("ⒶⓀⒶⓈⒽ");
+		// arr.push("ⒶⓀⒶⓈⒽ");
 		arr.push("AKASH");
 
 		// for (let i of arr) {

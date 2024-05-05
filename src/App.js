@@ -9,69 +9,27 @@ import Education from "./Education";
 import Navbar from "./Navbar";
 import FooterGradiant from "./FooterGradiant";
 import Contacts from "./Contacts";
+import Projects from "./Projects";
 
 function App() {
-	const [loaded, isLoaded] = useState();
-	useEffect(() => {
-		document.title = "Hey, I'm Akash !"; // Set the document title
-	}, []);
-	return (
-		<>
-			{!isLoaded && <PageLoading />}
-			{isLoaded && <Page isLoaded={isLoaded} />}
-		</>
-	);
+	return <Page />;
 }
 
-function Page({ isLoaded }) {
-	useEffect(() => {
-		isLoaded(true);
-	}, []);
-	const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-	const handleMouseMove = (e) => {
-		setCursorPosition({ x: e.clientX, y: e.clientY });
-	};
-
+function Page() {
 	return (
 		<>
-			<div className='app' onMouseMove={handleMouseMove}>
+			<div className='app'>
 				<Navbar />
 				<AkashKalki />
 				<About />
+				<Projects />
 				<Education />
 				<Skills />
-				{/* <div className='page_divider'>
-					<div className='main_left'>
-						<LeftBar />
-						<div className='inner_left'>
-							<LeftBar />
-						</div>
-					</div>
-					<div className='main_middle'>
-						<AkashKalki />
-						<About />
-						<Education />
-						<Skills />
-					</div>
-					<div className='main_right'>
-						<LeftBar />
-					</div>
-				</div> */}
-				{/* <CustomCursor cursorPosition={cursorPosition} /> */}
-				<Contacts/>
+				<Contacts />
 				<FooterGradiant />
 			</div>
 		</>
 	);
 }
-
-const CustomCursor = ({ cursorPosition }) => {
-	return (
-		<div
-			className='custom-cursor'
-			style={{ left: cursorPosition.x, top: cursorPosition.y }}
-		/>
-	);
-};
 
 export default App;

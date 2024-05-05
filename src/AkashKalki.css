@@ -7,7 +7,7 @@
     margin-top: auto;
     margin-bottom: auto;
     height: max-content; 
-    background: linear-gradient(120deg, rgb(77, 238, 253), rgb(3, 151, 232), rgb(77, 238, 253));
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -22,8 +22,6 @@
 
 .kalkitext:hover{
     cursor: pointer;
-    /* filter: drop-shadow(0 0 40px rgba(21, 0, 255, 0.623)); */
-    filter: drop-shadow(0 0 2px rgb(77, 238, 253));
 }
 
 .kalkimain{

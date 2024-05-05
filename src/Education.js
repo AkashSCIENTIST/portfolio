@@ -21,7 +21,7 @@ function Education() {
 			<br></br>
 			<ContentTable
 				subtable={true}
-				title={"Higher Secondary"}
+				title={"Higher Secondary School"}
 				body={`
 				HSC at Vikas Vidyalaya Matriculation HIgher Secondary School, Tiruppur.
 				From 2018 to 2020.
@@ -31,7 +31,7 @@ function Education() {
 			<br></br>
 			<ContentTable
 				subtable={true}
-				title={"Secondary"}
+				title={"High School"}
 				body={`
 				SSLC at St. Joseph's Matriculation HIgher Secondary School, Tiruppur.
 				From 2006 to 2018.

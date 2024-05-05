@@ -1,19 +1,38 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
-import logo_img from "./name.png";
 
 function Navbar() {
-	const [theme, setTheme] = useState("Light Mode");
+	const [theme, setTheme] = useState(null);
+
+	useEffect(() => {
+		if (theme === "Light Mode") {
+			root.style.setProperty("--background", "#fefefe");
+			root.style.setProperty("--textcolor", "#0b1215");
+			setTheme("Light Mode");
+			localStorage.setItem("AkashPortfolioTheme", "Light Mode");
+			console.log(localStorage.getItem("AkashPortfolioTheme"));
+		} else {
+			root.style.setProperty("--background", "#0b1215");
+			root.style.setProperty("--textcolor", "#fafafa");
+			setTheme("Dark Mode");
+			localStorage.setItem("AkashPortfolioTheme", "Dark Mode");
+			console.log(localStorage.getItem("AkashPortfolioTheme"));
+		}
+	}, []);
 
 	function changeTheme() {
 		if (theme === "Light Mode") {
 			root.style.setProperty("--background", "#0b1215");
 			root.style.setProperty("--textcolor", "#fafafa");
 			setTheme("Dark Mode");
+			localStorage.setItem("AkashPortfolioTheme", "Dark Mode");
+			console.log(localStorage.getItem("AkashPortfolioTheme"));
 		} else {
 			root.style.setProperty("--background", "#fefefe");
 			root.style.setProperty("--textcolor", "#0b1215");
 			setTheme("Light Mode");
+			localStorage.setItem("AkashPortfolioTheme", "Light Mode");
+			console.log(localStorage.getItem("AkashPortfolioTheme"));
 		}
 	}
 

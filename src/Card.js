@@ -1,5 +1,4 @@
 import "./Card.css";
-import Image from "./bg.png";
 
 function Card(props) {
 	return (
