@@ -103,9 +103,10 @@ function Projects() {
 function Project({ img, name, desc }) {
 	const contentStyle = {
 		maxWidth: "600px",
-		width: "90%",
+		width: "75%",
 		backgroundColor: "var(--background)",
 		borderRadius: "11px",
+		maxHeight : "100vh"
 	};
 	return (
 		<Popup
@@ -120,9 +121,18 @@ function Project({ img, name, desc }) {
 				</div>
 			}
 			contentStyle={contentStyle}
+			closeOnDocumentClick
 			modal
 			nested>
 			<div className='popup modal'>
+				<button
+					className='button'
+					onClick={() => {
+						console.log("modal closed ");
+						this.close();
+					}}>
+					close modal
+				</button>
 				<div
 					className='project-image-popup'
 					style={{
