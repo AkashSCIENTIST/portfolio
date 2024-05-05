@@ -125,14 +125,6 @@ function Project({ img, name, desc }) {
 			modal
 			nested>
 			<div className='popup modal'>
-				<button
-					className='button'
-					onClick={() => {
-						console.log("modal closed ");
-						this.close();
-					}}>
-					close modal
-				</button>
 				<div
 					className='project-image-popup'
 					style={{
