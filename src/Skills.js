@@ -51,7 +51,7 @@ function Skills() {
 			<ContentTable
 				subtable={true}
 				title={"Programming"}
-				body={`Python (with Deep Learning), C, C++, Java, Node.JS`}
+				body={`Python (with Deep Learning), C, C++, Java 8, Node.JS`}
 			/>
 			<br />
 			<ContentTable
@@ -71,6 +71,13 @@ function Skills() {
 				title={"Generative AI"}
 				body={`Prompt Engineering with respect to ChatGPT, Stable Diffusion and DALL-E`}
 			/>
+			<br />
+			<ContentTable
+				subtable={true}
+				title={"Spoken Language"}
+				body={`Tamil, English, Hindi`}
+			/>
+			<br />
 		</Card>
 	);
 }

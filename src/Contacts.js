@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Contacts() {
 	return (
-		<div className='contactss' id='contacts'>
+		<div className='contactss'>
 			<div className='contacts'>
 				<center>
 					<a href='mailto:spakash182@gmail.com'>

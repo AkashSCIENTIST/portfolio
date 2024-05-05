@@ -16,15 +16,16 @@ import rootwords2 from "./rootwords2.jpg";
 
 function Projects() {
 	return (
-		<Card>
-			<UnderlineText>{}</UnderlineText>
-			<ContentTable title={"Projects"} body={``} />
-			<br></br>
-			<div className='projects'>
-				<Project
-					img={psychology}
-					name={"Psychological Disorder Detection using Hybrid Transformer"}
-					desc={`The definition of a
+		<>
+			<Card>
+				<UnderlineText></UnderlineText>
+				<ContentTable title={"Projects"} body={``} />
+				<br></br>
+				<div className='projects'>
+					<Project
+						img={psychology}
+						name={"Psychological Disorder Detection using Hybrid Transformer"}
+						desc={`The definition of a
 					psychological disorder is an upsetting pattern of feelings, ideas, or
 					actions. Early detection reduces stigma, increases overall well-being,
 					prevents complications, minimises the chance of crisis situations, and
@@ -32,11 +33,11 @@ function Projects() {
 					Hybrid Transformer models have been created to identify conditions in
 					tweets such as stress, anxiety, depression, and so on. The highest
 					accuracy of the created models is 99.99%.`}
-				/>
-				<Project
-					img={blockchain}
-					name={"Securing Communication using Modified SPHINCS+C"}
-					desc={`Certain voice assistants frequently use
+					/>
+					<Project
+						img={blockchain}
+						name={"Securing Communication using Modified SPHINCS+C"}
+						desc={`Certain voice assistants frequently use
 					private blockchains to store their data. The blockchains of today are impenetrable. The
 					security of blockchain technology is at risk due to the emergence of quantum computers,
 					which have the capacity to manipulate blockchains and their data. These cryptographic
@@ -47,11 +48,11 @@ function Projects() {
 					size in order to overcome this. The already-existing SPHINCS+C was altered further to
 					reduce the size of the signatures that SPHINCS+C created.
 					`}
-				/>
-				<Project
-					img={finance}
-					name={"Financial Region of Interest Detector"}
-					desc={`
+					/>
+					<Project
+						img={finance}
+						name={"Financial Region of Interest Detector"}
+						desc={`
 					As part of the Samsung PRISM Internship, a model was designed to identify the
 					Region of Interest (ROI) in a smartphone snapshot of banking apps. The ROI is a
 					rectangle section that contains important material such as the names of the stocks, banks,
@@ -59,33 +60,33 @@ function Projects() {
 					learning algorithm, which is especially made for finance applications like Yahoo Finance
 					and BloomBerg. Several models have been tuned and used in this procedure. The primary
 					performance metric was mAP50. The mAP50 of the best-performing model was 84%.`}
-				/>
-				<Project
-					img={search}
-					name={"Multi Modal Search Engine (Prototype) for SIH 2022"}
-					desc={`Hexagon Search, a prototype multimodal search engine, was developed in
+					/>
+					<Project
+						img={search}
+						name={"Multi Modal Search Engine (Prototype) for SIH 2022"}
+						desc={`Hexagon Search, a prototype multimodal search engine, was developed in
 					response to the Smart India Hackathon's AT980 challenge description. It is unified
 					database software that allows you to search text or terms across a variety of file types,
 					such as Word, Excel, PDF, JPG, and PNG, using Computer Vision and NLP
 					functionalities internally. Additionally, it has connectivity with pre-established database
 					terms.
 					`}
-				/>
-				<Project
-					img={tamilwiki}
-					name={"Tamil Wiki Search Extension"}
-					desc={`This Project was implemented under Venmurasu Programming Team’s
+					/>
+					<Project
+						img={tamilwiki}
+						name={"Tamil Wiki Search Extension"}
+						desc={`This Project was implemented under Venmurasu Programming Team’s
 					intra-collage hackathon. The Venmurasu Programming Team is a voluntary organisation made up of
 					PSG College of Technology faculty, students, and alumni that is dedicated to developing
 					the NLP environment for the Tamil language.It aimed to improve Tamil Wiki site’s search functionality, using NLP based
 					principles. For this, Existing publicly visible pages of the were web-scraped and indexed
 					using ZincSearch. New Search facility was developed and it offers superior results
 					compared to existing features.`}
-				/>
-				<Project
-					img={rootwords2}
-					name={"Root Words Indexing for Tamil"}
-					desc={`Accomplished as a part of the Venmurasu Programming Team's remote
+					/>
+					<Project
+						img={rootwords2}
+						name={"Root Words Indexing for Tamil"}
+						desc={`Accomplished as a part of the Venmurasu Programming Team's remote
 					internship. The Venmurasu Programming Team is a voluntary organisation made up of
 					PSG College of Technology faculty, students, and alumni that is dedicated to developing
 					the NLP environment for the Tamil language. The goal of the project is to identify
@@ -94,9 +95,10 @@ function Projects() {
 					those words are indexed. In addition to this an User Interface was also developed for
 					real-world use.
 					`}
-				/>
-			</div>
-		</Card>
+					/>
+				</div>
+			</Card>
+		</>
 	);
 }
 
@@ -106,7 +108,7 @@ function Project({ img, name, desc }) {
 		width: "75%",
 		backgroundColor: "var(--background)",
 		borderRadius: "11px",
-		maxHeight : "100vh"
+		maxHeight: "100vh",
 	};
 	return (
 		<Popup

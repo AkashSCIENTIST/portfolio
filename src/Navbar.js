@@ -12,19 +12,19 @@ function Navbar() {
 			root.style.setProperty("--textcolor", "#0b1215");
 			setTheme("Light Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Light Mode");
-			console.log(localStorage.getItem("AkashPortfolioTheme"));
+			// console.log(localStorage.getItem("AkashPortfolioTheme"));
 		} else if (theme === "Dark Mode") {
 			root.style.setProperty("--background", "#0b1215");
 			root.style.setProperty("--textcolor", "#fafafa");
 			setTheme("Dark Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Dark Mode");
-			console.log(localStorage.getItem("AkashPortfolioTheme"));
+			// console.log(localStorage.getItem("AkashPortfolioTheme"));
 		} else {
 			root.style.setProperty("--background", "#fefefe");
 			root.style.setProperty("--textcolor", "#0b1215");
 			setTheme("Light Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Light Mode");
-			console.log(localStorage.getItem("AkashPortfolioTheme"));
+			// console.log(localStorage.getItem("AkashPortfolioTheme"));
 		}
 	}, []);
 
@@ -34,13 +34,13 @@ function Navbar() {
 			root.style.setProperty("--textcolor", "#fafafa");
 			setTheme("Dark Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Dark Mode");
-			console.log(localStorage.getItem("AkashPortfolioTheme"));
+			// console.log(localStorage.getItem("AkashPortfolioTheme"));
 		} else {
 			root.style.setProperty("--background", "#fefefe");
 			root.style.setProperty("--textcolor", "#0b1215");
 			setTheme("Light Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Light Mode");
-			console.log(localStorage.getItem("AkashPortfolioTheme"));
+			// console.log(localStorage.getItem("AkashPortfolioTheme"));
 		}
 	}
 
@@ -53,17 +53,17 @@ function Navbar() {
 			</div>
 			<div className='navbar-links'>
 				<i>
-					<a href='' className='navbar-link'>
-						<b>Home</b>
+					<a href='#home' className='navbar-link'>
+						<b>About</b>
 					</a>
-					<a href='' className='navbar-link'>
-						<b>Skills</b>
+					<a href='#projects' className='navbar-link'>
+						<b>Projects</b>
 					</a>
 					<a href='#contacts' className='navbar-link'>
 						<b>Contacts</b>
 					</a>
 					<button onClick={changeTheme} className='theme-changer'>
-						{theme}
+						To {theme === "Light Mode" ? "Dark Mode" : "Light Mode"}
 					</button>
 				</i>
 			</div>
