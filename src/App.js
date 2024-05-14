@@ -20,12 +20,15 @@ function Page() {
 		<>
 			<div className='app'>
 				<Navbar />
+
 				<span id='home'></span>
 				<AkashKalki />
+
 				<About />
 				<Skills />
 				<span id='projects'></span>
 				<Projects />
+				<span id='education'></span>
 				<Education />
 				<span id='contacts'></span>
 				<Contacts />

@@ -11,7 +11,10 @@
     --background : #fefefe;
     --textcolor:#0b1215;
 
-    --gradient: linear-gradient(120deg, #e57eff, #0d539d);
+    /* --gradient: linear-gradient(120deg, #e57eff, #0d539d); */
+    /* --gradient: linear-gradient( #e57eff, #813EEF, #0303db); */
+    --gradient: linear-gradient(var(--textcolor), #0303db)
+    /* --gradient : linear-gradient(120deg, #e57eff, #0d539d); */
 }
 
 @font-face {

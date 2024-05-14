@@ -119,7 +119,9 @@ function Project({ img, name, desc }) {
 						style={{
 							backgroundImage: `url(${img})`,
 						}}></div>
-					<p className='project-name'>{name}</p>
+					<p className='project-name'>
+						{name} <br></br><i>(Click to see more...)</i>
+					</p>
 				</div>
 			}
 			contentStyle={contentStyle}

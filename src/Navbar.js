@@ -32,12 +32,14 @@ function Navbar() {
 		if (theme === "Light Mode") {
 			root.style.setProperty("--background", "#0b1215");
 			root.style.setProperty("--textcolor", "#fafafa");
+			root.style.setProperty("--gradient", "linear-gradient(#fafafa, #0303db)");
 			setTheme("Dark Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Dark Mode");
 			// console.log(localStorage.getItem("AkashPortfolioTheme"));
 		} else {
 			root.style.setProperty("--background", "#fefefe");
 			root.style.setProperty("--textcolor", "#0b1215");
+			root.style.setProperty("--gradient", "linear-gradient(#0b1215, #0303db)");
 			setTheme("Light Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Light Mode");
 			// console.log(localStorage.getItem("AkashPortfolioTheme"));
@@ -59,8 +61,8 @@ function Navbar() {
 					<a href='#projects' className='navbar-link'>
 						<b>Projects</b>
 					</a>
-					<a href='#contacts' className='navbar-link'>
-						<b>Contacts</b>
+					<a href='#education' className='navbar-link'>
+						<b>Education</b>
 					</a>
 					<button onClick={changeTheme} className='theme-changer'>
 						To {theme === "Light Mode" ? "Dark Mode" : "Light Mode"}
