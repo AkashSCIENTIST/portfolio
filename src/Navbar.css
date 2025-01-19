@@ -102,6 +102,9 @@
         justify-content: center;
         justify-self: center;
         align-items: center;
+        width: 99vw;
+        backdrop-filter: blur(500px);
+        -webkit-backdrop-filter: blur(500px);
     }
     .theme-changer {
         font-size: 0.75rem;

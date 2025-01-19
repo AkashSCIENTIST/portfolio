@@ -11,11 +11,21 @@ function Education() {
 			<br></br>
 			<ContentTable
 				subtable={true}
+				title={"Masters's"}
+				body={`
+				National Institute of Technology Calicut.
+				From 2024 to 2026.
+				CGPA : 8.82
+				`}
+			/>
+			<br></br>
+			<ContentTable
+				subtable={true}
 				title={"Bachelor's"}
 				body={`
 				Information Technology at PSG College of Technology. 
 				From 2020 to 2024.
-				CGPA : 9.19
+				CGPA : 9.21
 				`}
 			/>
 			<br></br>

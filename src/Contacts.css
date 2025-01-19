@@ -3,7 +3,7 @@
 .contactss{
     /* justify-content: center;
     align-items: center; */
-    padding-top: 1vh;
+    /* padding-top: 1vh; */
     width: 100%;
     display: inline-block;
     justify-content: space-between;
@@ -16,8 +16,13 @@
     cursor: pointer;
     display: inline-block;
     font-size: initial;
-    color: gray;
+    transform: scale(1.5);
+    color: var(--textcolor);
+    transition: transform 0.1s;
+    transition-timing-function: ease-out-in;
+    transform: scale(1.5);
 }
+
 
 @media (max-width : 550px) {
     .contact{
@@ -27,9 +32,7 @@
 }
 
 .contact:hover{
-    /* transition-delay: 0.1s;
-    -webkit-transition-delay: 0.1s; */
-    color: rgb(77, 238, 253);
+    transition: transform 0.1s;
     transition-timing-function: ease-in-out;
-    filter: drop-shadow(0 0 45px rgba(255, 0, 132, 0.801));
+    transform: scale(3);
 }

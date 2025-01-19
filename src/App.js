@@ -23,15 +23,16 @@ function Page() {
 
 				<span id='home'></span>
 				<AkashKalki />
+				<span id='contacts'></span>
+				<Contacts />
 
 				<About />
+				<span id='education'></span>
+				<Education />
 				<Skills />
 				<span id='projects'></span>
 				<Projects />
-				<span id='education'></span>
-				<Education />
-				<span id='contacts'></span>
-				<Contacts />
+
 				<FooterGradiant />
 			</div>
 		</>

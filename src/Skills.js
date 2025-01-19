@@ -51,7 +51,7 @@ function Skills() {
 			<ContentTable
 				subtable={true}
 				title={"Programming"}
-				body={`Python (with Deep Learning), C, C++, Java 8, Node.JS`}
+				body={`Python (with Deep Learning), C, C++, Java, Node.JS`}
 			/>
 			<br />
 			<ContentTable
@@ -63,7 +63,7 @@ function Skills() {
 			<ContentTable
 				subtable={true}
 				title={"Databases"}
-				body={"SQL - MySQL, NoSQL - MongoDB"}
+				body={"SQL - MySQL, NoSQL - MongoDB, Firebase"}
 			/>
 			<br />
 			<ContentTable

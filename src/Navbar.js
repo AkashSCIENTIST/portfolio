@@ -10,18 +10,21 @@ function Navbar() {
 		if (theme === "Light Mode") {
 			root.style.setProperty("--background", "#fefefe");
 			root.style.setProperty("--textcolor", "#0b1215");
+			root.style.setProperty("--gradient", "linear-gradient(#0b1215, #0303db)");
 			setTheme("Light Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Light Mode");
 			// console.log(localStorage.getItem("AkashPortfolioTheme"));
 		} else if (theme === "Dark Mode") {
 			root.style.setProperty("--background", "#0b1215");
 			root.style.setProperty("--textcolor", "#fafafa");
+			root.style.setProperty("--gradient", "linear-gradient(#fafafa, #0303db)");
 			setTheme("Dark Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Dark Mode");
 			// console.log(localStorage.getItem("AkashPortfolioTheme"));
 		} else {
 			root.style.setProperty("--background", "#fefefe");
 			root.style.setProperty("--textcolor", "#0b1215");
+			root.style.setProperty("--gradient", "linear-gradient(#0b1215, #0303db)");
 			setTheme("Light Mode");
 			localStorage.setItem("AkashPortfolioTheme", "Light Mode");
 			// console.log(localStorage.getItem("AkashPortfolioTheme"));

@@ -4,6 +4,8 @@ import ContentTable from "./ContentTable";
 import UnderlineText from "./UnderlineText";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { useCallback, useEffect, useState } from "react";
 
 import leo from "./leo.png";
 import blockchain from "./blockchain.jpg";
@@ -24,7 +26,9 @@ function Projects() {
 				<div className='projects'>
 					<Project
 						img={psychology}
-						name={"Psychological Disorder Detection using Hybrid Transformer"}
+						name={
+							"Psychological Disorder Detection using Hybrid Transformer"
+						}
 						desc={`The definition of a
 					psychological disorder is an upsetting pattern of feelings, ideas, or
 					actions. Early detection reduces stigma, increases overall well-being,
@@ -63,7 +67,9 @@ function Projects() {
 					/>
 					<Project
 						img={search}
-						name={"Multi Modal Search Engine (Prototype) for SIH 2022"}
+						name={
+							"Multi Modal Search Engine (Prototype) for SIH 2022"
+						}
 						desc={`Hexagon Search, a prototype multimodal search engine, was developed in
 					response to the Smart India Hackathon's AT980 challenge description. It is unified
 					database software that allows you to search text or terms across a variety of file types,
@@ -102,6 +108,7 @@ function Projects() {
 	);
 }
 
+
 function Project({ img, name, desc }) {
 	const contentStyle = {
 		maxWidth: "600px",
@@ -112,6 +119,7 @@ function Project({ img, name, desc }) {
 	};
 	return (
 		<Popup
+			position='right center'
 			trigger={
 				<div className='project'>
 					<div
@@ -120,7 +128,8 @@ function Project({ img, name, desc }) {
 							backgroundImage: `url(${img})`,
 						}}></div>
 					<p className='project-name'>
-						{name} <br></br><i>(Click to see more...)</i>
+						{name} <br></br>
+						<i>(Click to see more...)</i>
 					</p>
 				</div>
 			}
